@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BattleShip</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <a href="https://axstr0n.github.io/Portfolio/" target="_blank" class="logo-container">
+                <img src="logo.png" alt="logo">
+            </a>
+            <div class="title">BATTLESHIP</div>
+        </div>
+
+        <div class="board-setup-container">
+            <div class="title">SETUP</div>
+            <!-- Place ships -->
+            <div class="wrapper">
+                <div class="left" id="left">
+                    <div id="board-setup-wrapper" class="board-setup-wrapper">
+        
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="slider-container">
+                        <div class="slider-label-value">
+                            <div class="slider-label">Rows</div>
+                            <div class="value" id="rows-slider-value">10</div>
+                        </div>
+                        <input type="range" min="7" max="15" value="10" class="slider" id="rows-slider">
+                    </div>
+                    <div class="slider-container">
+                        <div class="slider-label-value">
+                            <div class="slider-label">Cols</div>
+                            <div class="value" id="cols-slider-value">10</div>
+                        </div>
+                        <input type="range" min="7" max="15" value="10" class="slider" id="cols-slider">
+                    </div>
+                    <div class="ships-selector" id="ships-selector">
+                        
+                        <div id="ship-selected-container">
+                            
+                        </div>
+                        <div id="add-ship-buttons">
+                            
+                        </div>
+                    </div>
+                    <button id="auto-place-ships-button" class="">Auto Place Ships</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="game-container">
+            <div class="title">GAME</div>
+            <div class="game-buttons">
+                <button id="play-button">Play</button>
+                <button id="step-button">One Step</button>
+                <button id="reset-button">Reset</button>
+            </div>
+    
+             <div id="players" class="players">
+               
+            </div> 
+        </div>
+
+    
+    </div>
+</body>
+</html>
